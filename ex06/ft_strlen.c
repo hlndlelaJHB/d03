@@ -1,20 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hlndlela <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/16 11:39:12 by hlndlela          #+#    #+#             */
-/*   Updated: 2020/07/17 11:14:06 by hlndlela         ###   ########.fr       */
+/*   Created: 2020/07/17 11:52:47 by hlndlela          #+#    #+#             */
+/*   Updated: 2020/07/17 12:09:05 by hlndlela         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
-#include <stdio.h>
+int	 ft_strlen(char *str)
+{
+	int i;
+	i = 0;
 
-void	ft_ft(int *nbr); {
+	while(str[i]) {
 
-     *nbr = 42;
+		i+=1;
 	
+	}
+		
+ return i;
+}
+
+int main() 
+{
+	ft_strlen("Uyiyo nyani ingelosi");
+
+	return 0;
+
 }

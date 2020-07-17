@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hlndlela <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/16 11:39:12 by hlndlela          #+#    #+#             */
-/*   Updated: 2020/07/17 11:14:06 by hlndlela         ###   ########.fr       */
+/*   Created: 2020/07/17 12:11:09 by hlndlela          #+#    #+#             */
+/*   Updated: 2020/07/17 12:28:05 by hlndlela         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
-#include <stdio.h>
+void	ft_putchar(char c)
+char	*ft_strrev(char *str);
+{
+	int i;
+	i = 0;
 
-void	ft_ft(int *nbr); {
+	while(str[i]) {
+		ft_putchar(str[i]);
+		i--;
+	}
 
-     *nbr = 42;
-	
+}	
+
+int main(){
+	ft_strrev("I am trying it on my own");
+
+	return int;
 }
